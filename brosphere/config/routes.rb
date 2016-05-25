@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'static_pages#brhome'
 
   get 'static_pages/brhelp'
+  get 'static_pages/brabout'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

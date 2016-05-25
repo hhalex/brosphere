@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def brhelp
   end
+
+  def brabout
+  end
 end

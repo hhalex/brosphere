@@ -11,4 +11,8 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get brabout" do
+    get :brabout
+    assert_response :success
+  end
 end
