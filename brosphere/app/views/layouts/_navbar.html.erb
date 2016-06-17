@@ -1,10 +1,10 @@
 <nav class="navbar navbar-default ">
 </nav>
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <ul class="nav navbar-nav">
-                <li><%= link_to "Brosphere", "/", :class => "navbar-brand"  %></li>
+                <li><%= link_to "Brosphere", root_path, :class => "navbar-brand"  %></li>
             </ul>
             
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -26,8 +26,8 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><%= link_to "BrHelp", {:controller => "static_pages", :action => "brhelp"} %></li>
-                <li><%= link_to "BrAbout", {:controller => "static_pages", :action => "brabout"} %></li>
+                <li><%= link_to "BrHelp", brhelp_path %></li>
+                <li><%= link_to "BrAbout", brabout_path %></li>
             </ul>
 
         </div>
