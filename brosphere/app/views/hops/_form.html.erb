@@ -1,0 +1,77 @@
+<%= form_for(@hop) do |f| %>
+  <% if @hop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hop.errors.count, "error") %> prohibited this hop from being saved:</h2>
+
+      <ul>
+      <% @hop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br>
+    <%= f.number_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :origin %><br>
+    <%= f.text_field :origin %>
+  </div>
+  <div class="field">
+    <%= f.label :alpha %><br>
+    <%= f.text_field :alpha %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :use %><br>
+    <%= f.text_field :use %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :form %><br>
+    <%= f.text_field :form %>
+  </div>
+  <div class="field">
+    <%= f.label :beta %><br>
+    <%= f.text_field :beta %>
+  </div>
+  <div class="field">
+    <%= f.label :hsi %><br>
+    <%= f.text_field :hsi %>
+  </div>
+  <div class="field">
+    <%= f.label :display_amount %><br>
+    <%= f.text_field :display_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :inventory %><br>
+    <%= f.text_field :inventory %>
+  </div>
+  <div class="field">
+    <%= f.label :display_time %><br>
+    <%= f.text_field :display_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

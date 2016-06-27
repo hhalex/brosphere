@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  version: 1
+  origin: MyString
+  alpha: 1.5
+  amount: 1.5
+  use: MyString
+  time: 1.5
+  notes: MyString
+  type: 
+  form: MyString
+  beta: 1.5
+  hsi: 1.5
+  display_amount: 1.5
+  inventory: 1.5
+  display_time: MyString
+
+two:
+  name: MyString
+  version: 1
+  origin: MyString
+  alpha: 1.5
+  amount: 1.5
+  use: MyString
+  time: 1.5
+  notes: MyString
+  type: 
+  form: MyString
+  beta: 1.5
+  hsi: 1.5
+  display_amount: 1.5
+  inventory: 1.5
+  display_time: MyString

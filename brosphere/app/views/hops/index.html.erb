@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hops</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Version</th>
+      <th>Origin</th>
+      <th>Alpha</th>
+      <th>Amount</th>
+      <th>Use</th>
+      <th>Time</th>
+      <th>Notes</th>
+      <th>Type</th>
+      <th>Form</th>
+      <th>Beta</th>
+      <th>Hsi</th>
+      <th>Display amount</th>
+      <th>Inventory</th>
+      <th>Display time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hops.each do |hop| %>
+      <tr>
+        <td><%= hop.name %></td>
+        <td><%= hop.version %></td>
+        <td><%= hop.origin %></td>
+        <td><%= hop.alpha %></td>
+        <td><%= hop.amount %></td>
+        <td><%= hop.use %></td>
+        <td><%= hop.time %></td>
+        <td><%= hop.notes %></td>
+        <td><%= hop.type %></td>
+        <td><%= hop.form %></td>
+        <td><%= hop.beta %></td>
+        <td><%= hop.hsi %></td>
+        <td><%= hop.display_amount %></td>
+        <td><%= hop.inventory %></td>
+        <td><%= hop.display_time %></td>
+        <td><%= link_to 'Show', hop %></td>
+        <td><%= link_to 'Edit', edit_hop_path(hop) %></td>
+        <td><%= link_to 'Destroy', hop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hop', new_hop_path %>

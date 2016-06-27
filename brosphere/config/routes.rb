@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hops
   root 'static_pages#brhome'
 
   get 'brhelp' => 'static_pages#brhelp'
