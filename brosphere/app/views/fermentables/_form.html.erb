@@ -1,0 +1,105 @@
+<%= form_for(@fermentable) do |f| %>
+  <% if @fermentable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fermentable.errors.count, "error") %> prohibited this fermentable from being saved:</h2>
+
+      <ul>
+      <% @fermentable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br>
+    <%= f.number_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :origin %><br>
+    <%= f.text_field :origin %>
+  </div>
+  <div class="field">
+    <%= f.label :supplier %><br>
+    <%= f.text_field :supplier %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :yield %><br>
+    <%= f.text_field :yield %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :add_after_boil %><br>
+    <%= f.check_box :add_after_boil %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :display_amount %><br>
+    <%= f.text_field :display_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :inventory %><br>
+    <%= f.text_field :inventory %>
+  </div>
+  <div class="field">
+    <%= f.label :coarse_fine_diff %><br>
+    <%= f.text_field :coarse_fine_diff %>
+  </div>
+  <div class="field">
+    <%= f.label :moisture %><br>
+    <%= f.text_field :moisture %>
+  </div>
+  <div class="field">
+    <%= f.label :diastatic_power %><br>
+    <%= f.text_field :diastatic_power %>
+  </div>
+  <div class="field">
+    <%= f.label :protein %><br>
+    <%= f.text_field :protein %>
+  </div>
+  <div class="field">
+    <%= f.label :max_in_batch %><br>
+    <%= f.text_field :max_in_batch %>
+  </div>
+  <div class="field">
+    <%= f.label :recommend_mash %><br>
+    <%= f.check_box :recommend_mash %>
+  </div>
+  <div class="field">
+    <%= f.label :IBU_gal_per_lb %><br>
+    <%= f.text_field :IBU_gal_per_lb %>
+  </div>
+  <div class="field">
+    <%= f.label :potential %><br>
+    <%= f.text_field :potential %>
+  </div>
+  <div class="field">
+    <%= f.label :display_color %><br>
+    <%= f.text_field :display_color %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

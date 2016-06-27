@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160627211303) do
+ActiveRecord::Schema.define(version: 20160627212356) do
+
+  create_table "fermentables", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "version"
+    t.string   "type"
+    t.string   "origin"
+    t.string   "supplier"
+    t.float    "amount"
+    t.float    "yield"
+    t.float    "color"
+    t.boolean  "add_after_boil"
+    t.text     "notes"
+    t.float    "display_amount"
+    t.float    "inventory"
+    t.float    "coarse_fine_diff"
+    t.float    "moisture"
+    t.float    "diastatic_power"
+    t.float    "protein"
+    t.float    "max_in_batch"
+    t.boolean  "recommend_mash"
+    t.float    "IBU_gal_per_lb"
+    t.float    "potential"
+    t.string   "display_color"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "hops", force: :cascade do |t|
     t.string   "name"

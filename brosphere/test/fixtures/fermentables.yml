@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  version: 1
+  type: 
+  origin: MyString
+  supplier: MyString
+  amount: 1.5
+  yield: 1.5
+  color: 1.5
+  add_after_boil: false
+  notes: MyText
+  type: 
+  display_amount: 1.5
+  inventory: 1.5
+  coarse_fine_diff: 1.5
+  moisture: 1.5
+  diastatic_power: 1.5
+  protein: 1.5
+  max_in_batch: 1.5
+  recommend_mash: false
+  IBU_gal_per_lb: 1.5
+  potential: 1.5
+  display_color: MyString
+
+two:
+  name: MyString
+  version: 1
+  type: 
+  origin: MyString
+  supplier: MyString
+  amount: 1.5
+  yield: 1.5
+  color: 1.5
+  add_after_boil: false
+  notes: MyText
+  type: 
+  display_amount: 1.5
+  inventory: 1.5
+  coarse_fine_diff: 1.5
+  moisture: 1.5
+  diastatic_power: 1.5
+  protein: 1.5
+  max_in_batch: 1.5
+  recommend_mash: false
+  IBU_gal_per_lb: 1.5
+  potential: 1.5
+  display_color: MyString
