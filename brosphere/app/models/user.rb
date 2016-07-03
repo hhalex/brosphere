@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessor :name, :email
+  #attr_accessor :name, :email
+  before_save { self.email.downcase! }
   # \A is equivalent to ^
   # \z is equivalent to $
   # \d is the digit class
