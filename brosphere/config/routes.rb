@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'static_pages#brhome'
   
   get "/signup", to: 'users#new'
+  post "/signup", to: 'users#create'
 
   resources :users
   resources :fermentables
