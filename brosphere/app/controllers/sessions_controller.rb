@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       flash.now[:success] = "Cool bro " + user.name + "! You're in the brosphere."
-      redirect_to root_path
+      log_in user
+      redirect_to user
     else
       flash.now[:danger] = "Authentication problem"
       render 'new'
