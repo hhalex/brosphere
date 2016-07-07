@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   root 'static_pages#brhome'
-  
+
+  # Signup and signin
+  get '/login'      , to: 'sessions#new'
+  post '/login'     , to: 'sessions#create'
+  delete '/logout'  , to: 'sessions#destroy'
+
   get "/signup", to: 'users#new'
   post "/signup", to: 'users#create'
 
@@ -8,6 +13,7 @@ Rails.application.routes.draw do
   resources :fermentables
   resources :hops
 
+  # Static pages
   get 'brhelp', to: 'static_pages#brhelp'
   get 'brabout', to: 'static_pages#brabout'
 
