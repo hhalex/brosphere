@@ -21,8 +21,6 @@
                         <li><a href="#">Ma brosse</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Mon Yeti</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Trucs</a></li>
                     </ul>
                 </li>
             </ul>
@@ -32,7 +30,7 @@
                 <li><%= link_to "BrAbout", brabout_path %></li>
                 <% if logged_in? %>
                     <li><%= link_to "My BroFile", current_user %></li>
-                    <li><%= link_to "Logout", logout_path, method: delete %></li>
+                    <li><%= link_to "Logout", logout_path, method: :delete %></li>
                 <% else %>
                     <li><%= link_to "Login", login_path %></li>
                     <li><%= link_to "Sign Up", signup_path %></li>
