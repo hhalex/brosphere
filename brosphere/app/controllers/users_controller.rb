@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
+      # We log in by default
+      log_in @user
       # Handle a successful save.
       flash[:success] = "Welcome Bro"
       redirect_to @user
